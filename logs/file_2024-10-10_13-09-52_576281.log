@@ -1,0 +1,132 @@
+2024-10-10 13:09:53.986 | INFO     | aiogram.dispatcher.dispatcher:start_polling:359 - Start polling.
+2024-10-10 13:10:03.475 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:1] in chat [private:5213841899]
+2024-10-10 13:10:03.831 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620745]: [success] (in 357 ms)
+2024-10-10 13:10:05.953 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:3] in chat [private:5213841899]
+2024-10-10 13:10:06.382 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_error:150 - Process update [ID:728620746]: [failed] (in 429 ms)
+2024-10-10 13:10:07.987 | ERROR    | asyncio.base_events:default_exception_handler:1771 - Task exception was never retrieved
+future: <Task finished name='Task-379' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=WrongFileIdentifier('Wrong file identifier/http url specified')>
+Traceback (most recent call last):
+
+> File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                     │         │     │                   │    │               │        └ True
+                     │         │     │                   │    │               └ [<Update {"update_id":728620746,"message":{"message_id":3,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","userna...
+                     │         │     │                   │    └ <function Dispatcher.process_updates at 0x00000199241044A0>
+                     │         │     │                   └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000001992456D110>
+                     │         │     └ <method 'from_iterable' of 'itertools.chain' objects>
+                     │         └ <class 'itertools.chain'>
+                     └ <module 'itertools' (built-in)>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+                 │       │       └ [<coroutine object Handler.notify at 0x00000199246925C0>]
+                 │       └ <function gather at 0x0000019922AA3240>
+                 └ <module 'asyncio' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {}
+                     │           │        └ (<Update {"update_id":728620746,"message":{"message_id":3,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","userna...
+                     │           └ <bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000001992456D110>>
+                     └ Handler.HandlerObj(handler=<bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x0...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+                 │    │                │      │      └ <aiogram.types.fields.Field object at 0x0000019923F895D0>
+                 │    │                │      └ <Update {"update_id":728620746,"message":{"message_id":3,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","usernam...
+                 │    │                └ <function Handler.notify at 0x0000019924012AC0>
+                 │    └ <aiogram.dispatcher.handler.Handler object at 0x00000199244DA450>
+                 └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000001992456D110>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {'state': <aiogram.dispatcher.storage.FSMContext object at 0x0000019924654A10>}
+                     │           │        └ (<Message {"message_id":3,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","username":"neboltavau","language_code"...
+                     │           └ <function send_text at 0x00000199245DCF40>
+                     └ Handler.HandlerObj(handler=<function send_text at 0x00000199245DCF40>, spec=FullArgSpec(args=['message', 'state'], varargs=No...
+
+  File "f:\shopbot\handlers\common.py", line 124, in send_text
+    await city_message(message)
+          │            └ <Message {"message_id":3,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","username":"neboltavau","language_code":...
+          └ <function city_message at 0x00000199245DD260>
+
+  File "f:\shopbot\handlers\common.py", line 210, in city_message
+    await query.bot.send_photo(user.id,
+          │     │              │    └ 5213841899
+          │     │              └ <User: 5213841899>
+          │     └ <property object at 0x000001992357EED0>
+          └ <Message {"message_id":3,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","username":"neboltavau","language_code":...
+
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 565, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+                   │    │       │   │       │           │        └ {}
+                   │    │       │   │       │           └ {'chat_id': 5213841899, 'caption': '🌐 Выберите населенный пункт:', 'reply_markup': '{"inline_keyboard":[[{"text":"🚫🏡 Архангел...
+                   │    │       │   │       └ <aiogram.utils.helper.Item object at 0x0000019923F8BA90>
+                   │    │       │   └ <class 'aiogram.bot.api.Methods'>
+                   │    │       └ <module 'aiogram.bot.api' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\aiogram\\bot...
+                   │    └ <function BaseBot.request at 0x0000019923FAF740>
+                   └ <aiogram.bot.bot.Bot object at 0x00000199245AF010>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+                 │   │                  │    │              │    │       │             │       │     └ {}
+                 │   │                  │    │              │    │       │             │       └ {'chat_id': 5213841899, 'caption': '🌐 Выберите населенный пункт:', 'reply_markup': '{"inline_keyboard":[[{"text":"🚫🏡 Архангел...
+                 │   │                  │    │              │    │       │             └ 'sendPhoto'
+                 │   │                  │    │              │    │       └ <aiogram.bot.bot.Bot object at 0x00000199245AF010>
+                 │   │                  │    │              │    └ TelegramAPIServer(base='https://api.telegram.org/bot{token}/{method}', file='https://api.telegram.org/file/bot{token}/{path}')
+                 │   │                  │    │              └ <aiogram.bot.bot.Bot object at 0x00000199245AF010>
+                 │   │                  │    └ <function BaseBot.get_session at 0x0000019923FAEF20>
+                 │   │                  └ <aiogram.bot.bot.Bot object at 0x00000199245AF010>
+                 │   └ <function make_request at 0x0000019923F6E480>
+                 └ <module 'aiogram.bot.api' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\aiogram\\bot...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           │            │       │        │             │        │             │        └ <function ClientResponse.text at 0x000001992308AAC0>
+           │            │       │        │             │        │             └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/sendPhoto) [400 Bad Request]>
+           │            │       │        │             │        │               <CIM...
+           │            │       │        │             │        └ 400
+           │            │       │        │             └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/sendPhoto) [400 Bad Request]>
+           │            │       │        │               <CIM...
+           │            │       │        └ <property object at 0x0000019922FD8A40>
+           │            │       └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/sendPhoto) [400 Bad Request]>
+           │            │         <CIM...
+           │            └ 'sendPhoto'
+           └ <function check_result at 0x0000019923F6E5C0>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+    │          │          │      └ 'Bad Request: wrong file identifier/HTTP URL specified'
+    │          │          └ <classmethod(<function _MatchErrorMixin.detect at 0x000001992355F880>)>
+    │          └ <class 'aiogram.utils.exceptions.BadRequest'>
+    └ <module 'aiogram.utils.exceptions' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\aio...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+          │   │   │       └ 'bad request: wrong file identifier/http url specified'
+          │   │   └ None
+          │   └ <class 'aiogram.utils.exceptions.BadRequest'>
+          └ <class 'aiogram.utils.exceptions.WrongFileIdentifier'>
+
+aiogram.utils.exceptions.WrongFileIdentifier: Wrong file identifier/http url specified
+2024-10-10 13:10:08.008 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:5] in chat [private:5213841899]
+2024-10-10 13:10:08.199 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620747]: [success] (in 192 ms)
+2024-10-10 13:10:13.487 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:3946536371440283830] from user [ID:5213841899] for message [ID:6] in chat [private:5213841899] with data: show_good_8 originally posted by user [ID:7774045102]
+2024-10-10 13:10:13.691 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:3946536371440283830] from user [ID:5213841899] for message [ID:6] in chat [private:5213841899] with data: show_good_8 originally posted by user [ID:7774045102]
+2024-10-10 13:10:13.691 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620748]: [success] (in 203 ms)
+2024-10-10 13:10:15.698 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:3946536370746247036] from user [ID:5213841899] for message [ID:6] in chat [private:5213841899] with data: goods_menu originally posted by user [ID:7774045102]
+2024-10-10 13:10:15.877 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:3946536370746247036] from user [ID:5213841899] for message [ID:6] in chat [private:5213841899] with data: goods_menu originally posted by user [ID:7774045102]
+2024-10-10 13:10:15.878 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620749]: [success] (in 179 ms)
+2024-10-10 13:10:16.690 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:7] in chat [private:5213841899]
+2024-10-10 13:10:16.869 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620750]: [success] (in 179 ms)
+2024-10-10 13:10:18.981 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:9] in chat [private:5213841899]
+2024-10-10 13:10:19.239 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620751]: [success] (in 258 ms)
+2024-10-10 13:10:21.561 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:11] in chat [private:5213841899]
+2024-10-10 13:10:22.130 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620752]: [success] (in 569 ms)
+2024-10-10 13:10:24.278 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:14] in chat [private:5213841899]
+2024-10-10 13:10:24.500 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620753]: [success] (in 221 ms)
+2024-10-10 13:10:31.656 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:16] in chat [private:5213841899]
+2024-10-10 13:10:31.948 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620754]: [success] (in 292 ms)
+2024-10-10 13:10:34.882 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:18] in chat [private:5213841899]
+2024-10-10 13:10:35.138 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620755]: [success] (in 255 ms)
+2024-10-10 13:10:36.139 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:20] in chat [private:5213841899]
+2024-10-10 13:10:36.368 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620756]: [success] (in 229 ms)
+2024-10-10 13:10:42.998 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:22] in chat [private:5213841899]
+2024-10-10 13:10:43.183 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620757]: [success] (in 185 ms)
+2024-10-10 13:10:49.932 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:24] in chat [private:5213841899]
+2024-10-10 13:10:50.469 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_error:150 - Process update [ID:728620758]: [failed] (in 537 ms)
+2024-10-10 13:11:02.945 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-10 13:11:02.945 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:436 - Stop polling...
+2024-10-10 13:11:02.945 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

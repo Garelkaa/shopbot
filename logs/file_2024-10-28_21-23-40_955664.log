@@ -1,0 +1,104 @@
+2024-10-28 21:23:44.745 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 21:23:46.042 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:106] in chat [private:6948741611]
+2024-10-28 21:23:46.811 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620828]: [success] (in 768 ms)
+2024-10-28 21:23:48.683 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:109] in chat [private:6948741611]
+2024-10-28 21:23:48.865 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_error:150 - Process update [ID:728620829]: [failed] (in 181 ms)
+2024-10-28 21:23:48.865 | ERROR    | asyncio.base_events:default_exception_handler:1785 - Task exception was never retrieved
+future: <Task finished name='Task-381' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=WrongFileIdentifier('Wrong file identifier/http url specified')>
+Traceback (most recent call last):
+
+> File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                     │         │     │                   │    │               │        └ True
+                     │         │     │                   │    │               └ [<Update {"update_id": 728620829, "message": {"message_id": 109, "from": {"id": 6948741611, "is_bot": false, "first_name": "v...
+                     │         │     │                   │    └ <function Dispatcher.process_updates at 0x000002B900AD62A0>
+                     │         │     │                   └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000002B900F850D0>
+                     │         │     └ <method 'from_iterable' of 'itertools.chain' objects>
+                     │         └ <class 'itertools.chain'>
+                     └ <module 'itertools' (built-in)>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+                 │       │       └ [<coroutine object Handler.notify at 0x000002B900EFBD80>]
+                 │       └ <function gather at 0x000002B97F1067A0>
+                 └ <module 'asyncio' from 'C:\\Users\\newsp\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {}
+                     │           │        └ (<Update {"update_id": 728620829, "message": {"message_id": 109, "from": {"id": 6948741611, "is_bot": false, "first_name": "v...
+                     │           └ <bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000002B900F850D0>>
+                     └ Handler.HandlerObj(handler=<bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x0...
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+                 │    │                │      │      └ <aiogram.types.fields.Field object at 0x000002B900963F90>
+                 │    │                │      └ <Update {"update_id": 728620829, "message": {"message_id": 109, "from": {"id": 6948741611, "is_bot": false, "first_name": "ve...
+                 │    │                └ <function Handler.notify at 0x000002B900A04C20>
+                 │    └ <aiogram.dispatcher.handler.Handler object at 0x000002B900F85190>
+                 └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000002B900F850D0>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {'state': <aiogram.dispatcher.storage.FSMContext object at 0x000002B901345550>}
+                     │           │        └ (<Message {"message_id": 109, "from": {"id": 6948741611, "is_bot": false, "first_name": "venv∆", "username": "venvfuck", "lan...
+                     │           └ <function send_text at 0x000002B900EB8680>
+                     └ Handler.HandlerObj(handler=<function send_text at 0x000002B900EB8680>, spec=FullArgSpec(args=['message', 'state'], varargs=No...
+
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\handlers\common.py", line 114, in send_text
+    await message.answer_photo(pic,
+          │       │            └ 'AgACAgIAAx0EZJqH4AAD6mHEq_0syDU-jz3cTQFXtfvB6oOGAALuuDEbZ7wpSsOSHsNLmkrsAQADAgADdwADIwQ'
+          │       └ <function Message.answer_photo at 0x000002B900930220>
+          └ <Message {"message_id": 109, "from": {"id": 6948741611, "is_bot": false, "first_name": "venv∆", "username": "venvfuck", "lang...
+
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\types\message.py", line 511, in answer_photo
+    return await self.bot.send_photo(
+                 │    └ <property object at 0x000002B97FECC310>
+                 └ <Message {"message_id": 109, "from": {"id": 6948741611, "is_bot": false, "first_name": "venv∆", "username": "venvfuck", "lang...
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\bot\bot.py", line 565, in send_photo
+    result = await self.request(api.Methods.SEND_PHOTO, payload, files)
+                   │    │       │   │       │           │        └ {}
+                   │    │       │   │       │           └ {'chat_id': 6948741611, 'caption': 'У вас возникли <b>вопросы</b> или <b>проблемы</b> ⁉️\n\nВы всегда можете обратиться в наш...
+                   │    │       │   │       └ <aiogram.utils.helper.Item object at 0x000002B90097A450>
+                   │    │       │   └ <class 'aiogram.bot.api.Methods'>
+                   │    │       └ <module 'aiogram.bot.api' from 'C:\\Users\\newsp\\OneDrive\\Рабочий стол\\shopbot\\venv\\Lib\\site-packages\\aiogram\\bot\\ap...
+                   │    └ <function BaseBot.request at 0x000002B90099E480>
+                   └ <aiogram.bot.bot.Bot object at 0x000002B900B2B190>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+                 │   │                  │    │              │    │       │             │       │     └ {}
+                 │   │                  │    │              │    │       │             │       └ {'chat_id': 6948741611, 'caption': 'У вас возникли <b>вопросы</b> или <b>проблемы</b> ⁉️\n\nВы всегда можете обратиться в наш...
+                 │   │                  │    │              │    │       │             └ 'sendPhoto'
+                 │   │                  │    │              │    │       └ <aiogram.bot.bot.Bot object at 0x000002B900B2B190>
+                 │   │                  │    │              │    └ TelegramAPIServer(base='https://api.telegram.org/bot{token}/{method}', file='https://api.telegram.org/file/bot{token}/{path}')
+                 │   │                  │    │              └ <aiogram.bot.bot.Bot object at 0x000002B900B2B190>
+                 │   │                  │    └ <function BaseBot.get_session at 0x000002B90099DC60>
+                 │   │                  └ <aiogram.bot.bot.Bot object at 0x000002B900B2B190>
+                 │   └ <function make_request at 0x000002B900965300>
+                 └ <module 'aiogram.bot.api' from 'C:\\Users\\newsp\\OneDrive\\Рабочий стол\\shopbot\\venv\\Lib\\site-packages\\aiogram\\bot\\ap...
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           │            │       │        │             │        │             │        └ <function ClientResponse.text at 0x000002B97FB43060>
+           │            │       │        │             │        │             └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/sendPhoto) [400 Bad Request]>
+           │            │       │        │             │        │               <CIM...
+           │            │       │        │             │        └ 400
+           │            │       │        │             └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/sendPhoto) [400 Bad Request]>
+           │            │       │        │               <CIM...
+           │            │       │        └ <property object at 0x000002B97FA484F0>
+           │            │       └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/sendPhoto) [400 Bad Request]>
+           │            │         <CIM...
+           │            └ 'sendPhoto'
+           └ <function check_result at 0x000002B900965440>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+    │          │          │      └ 'Bad Request: wrong file identifier/HTTP URL specified'
+    │          │          └ <classmethod(<function _MatchErrorMixin.detect at 0x000002B97FEA94E0>)>
+    │          └ <class 'aiogram.utils.exceptions.BadRequest'>
+    └ <module 'aiogram.utils.exceptions' from 'C:\\Users\\newsp\\OneDrive\\Рабочий стол\\shopbot\\venv\\Lib\\site-packages\\aiogram...
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+          │   │   │       └ 'bad request: wrong file identifier/http url specified'
+          │   │   └ None
+          │   └ <class 'aiogram.utils.exceptions.BadRequest'>
+          └ <class 'aiogram.utils.exceptions.WrongFileIdentifier'>
+
+aiogram.utils.exceptions.WrongFileIdentifier: Wrong file identifier/http url specified
+2024-10-28 21:42:59.067 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 21:42:59.067 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 21:42:59.068 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

@@ -1,0 +1,25 @@
+2024-10-28 22:39:14.647 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 22:39:14.720 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:90] in chat [supergroup:-1002450057705]
+2024-10-28 22:39:14.720 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620998]: [success] (in 1 ms)
+2024-10-28 22:39:27.335 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:352] in chat [private:6948741611]
+2024-10-28 22:39:28.145 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620999]: [success] (in 810 ms)
+2024-10-28 22:39:29.274 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:355] in chat [private:6948741611]
+2024-10-28 22:39:29.472 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728621000]: [success] (in 198 ms)
+2024-10-28 22:39:33.609 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501859408518622] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: city_34 originally posted by user [ID:7774045102]
+2024-10-28 22:39:33.666 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501859408518622] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: city_34 originally posted by user [ID:7774045102]
+2024-10-28 22:39:33.666 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728621001]: [success] (in 57 ms)
+2024-10-28 22:39:34.822 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501858028428535] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: area_118 originally posted by user [ID:7774045102]
+2024-10-28 22:39:34.881 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501858028428535] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: area_118 originally posted by user [ID:7774045102]
+2024-10-28 22:39:34.882 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728621002]: [success] (in 59 ms)
+2024-10-28 22:39:36.833 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501858033667153] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: good_1_118 originally posted by user [ID:7774045102]
+2024-10-28 22:39:36.896 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501858033667153] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: good_1_118 originally posted by user [ID:7774045102]
+2024-10-28 22:39:36.896 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728621003]: [success] (in 64 ms)
+2024-10-28 22:39:38.408 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501857527858153] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: position_2375 originally posted by user [ID:7774045102]
+2024-10-28 22:39:38.514 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501857527858153] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: position_2375 originally posted by user [ID:7774045102]
+2024-10-28 22:39:38.514 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728621004]: [success] (in 106 ms)
+2024-10-28 22:39:40.718 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501858389801157] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: pay_2375 originally posted by user [ID:7774045102]
+2024-10-28 22:39:40.934 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501858389801157] from user [ID:6948741611] for message [ID:356] in chat [private:6948741611] with data: pay_2375 originally posted by user [ID:7774045102]
+2024-10-28 22:39:40.935 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728621005]: [success] (in 217 ms)
+2024-10-28 22:46:45.825 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 22:46:45.825 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 22:46:45.825 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

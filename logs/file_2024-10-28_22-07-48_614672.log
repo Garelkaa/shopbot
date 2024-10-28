@@ -1,0 +1,70 @@
+2024-10-28 22:07:49.495 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 22:07:55.868 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:160] in chat [private:933457114]
+2024-10-28 22:07:56.231 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620853]: [success] (in 363 ms)
+2024-10-28 22:08:00.147 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:162] in chat [private:933457114]
+2024-10-28 22:08:00.414 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620854]: [success] (in 267 ms)
+2024-10-28 22:08:01.859 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:164] in chat [private:933457114]
+2024-10-28 22:08:02.009 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620855]: [success] (in 151 ms)
+2024-10-28 22:08:10.477 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:166] in chat [private:933457114]
+2024-10-28 22:08:10.881 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620856]: [success] (in 404 ms)
+2024-10-28 22:08:15.674 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:168] in chat [private:933457114]
+2024-10-28 22:08:15.852 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620857]: [success] (in 178 ms)
+2024-10-28 22:08:19.715 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:170] in chat [private:933457114]
+2024-10-28 22:08:21.193 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620858]: [success] (in 1477 ms)
+2024-10-28 22:08:24.400 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:177] in chat [private:933457114]
+2024-10-28 22:08:24.538 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620859]: [success] (in 138 ms)
+2024-10-28 22:08:25.586 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:179] in chat [private:933457114]
+2024-10-28 22:08:26.260 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620860]: [success] (in 674 ms)
+2024-10-28 22:08:28.295 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:181] in chat [private:933457114]
+2024-10-28 22:08:28.454 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620861]: [success] (in 159 ms)
+2024-10-28 22:08:49.751 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:183] in chat [private:933457114]
+2024-10-28 22:08:50.072 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620862]: [success] (in 321 ms)
+2024-10-28 22:08:51.966 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:4009167777588641955] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: city_8 originally posted by user [ID:7774045102]
+2024-10-28 22:08:52.046 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:4009167777588641955] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: city_8 originally posted by user [ID:7774045102]
+2024-10-28 22:08:52.046 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620863]: [success] (in 79 ms)
+2024-10-28 22:08:53.082 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:4009167780918654560] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: area_11 originally posted by user [ID:7774045102]
+2024-10-28 22:08:53.177 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:4009167780918654560] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: area_11 originally posted by user [ID:7774045102]
+2024-10-28 22:08:53.178 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620864]: [success] (in 97 ms)
+2024-10-28 22:08:54.389 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:4009167780274566373] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: good_16_11 originally posted by user [ID:7774045102]
+2024-10-28 22:08:54.498 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:4009167780274566373] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: good_16_11 originally posted by user [ID:7774045102]
+2024-10-28 22:08:54.498 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620865]: [success] (in 109 ms)
+2024-10-28 22:08:55.497 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:4009167777636347863] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: area_11 originally posted by user [ID:7774045102]
+2024-10-28 22:08:55.642 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:4009167777636347863] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: area_11 originally posted by user [ID:7774045102]
+2024-10-28 22:08:55.642 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620866]: [success] (in 145 ms)
+2024-10-28 22:08:56.194 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:4009167777211625560] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: city_8 originally posted by user [ID:7774045102]
+2024-10-28 22:08:56.354 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:4009167777211625560] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: city_8 originally posted by user [ID:7774045102]
+2024-10-28 22:08:56.354 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620867]: [success] (in 161 ms)
+2024-10-28 22:08:57.298 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:4009167780588629914] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: cities originally posted by user [ID:7774045102]
+2024-10-28 22:08:57.637 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:4009167780588629914] from user [ID:933457114] for message [ID:184] in chat [private:933457114] with data: cities originally posted by user [ID:7774045102]
+2024-10-28 22:08:57.637 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620868]: [success] (in 339 ms)
+2024-10-28 22:09:41.805 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:185] in chat [private:933457114]
+2024-10-28 22:09:42.114 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620869]: [success] (in 309 ms)
+2024-10-28 22:09:47.121 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:187] in chat [private:933457114]
+2024-10-28 22:09:47.338 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620870]: [success] (in 217 ms)
+2024-10-28 22:10:05.369 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:189] in chat [private:933457114]
+2024-10-28 22:10:05.540 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620871]: [success] (in 171 ms)
+2024-10-28 22:10:07.962 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:191] in chat [private:933457114]
+2024-10-28 22:10:08.200 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620872]: [success] (in 238 ms)
+2024-10-28 22:10:09.539 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:193] in chat [private:933457114]
+2024-10-28 22:10:10.201 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620873]: [success] (in 662 ms)
+2024-10-28 22:10:10.799 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:195] in chat [private:933457114]
+2024-10-28 22:10:11.216 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620874]: [success] (in 417 ms)
+2024-10-28 22:10:11.958 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:197] in chat [private:933457114]
+2024-10-28 22:10:12.977 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620875]: [success] (in 1020 ms)
+2024-10-28 22:10:27.066 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:199] in chat [private:933457114]
+2024-10-28 22:10:27.315 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620876]: [success] (in 249 ms)
+2024-10-28 22:10:28.586 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:201] in chat [private:933457114]
+2024-10-28 22:10:29.969 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:202] in chat [private:933457114]
+2024-10-28 22:10:30.227 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620878]: [success] (in 258 ms)
+2024-10-28 22:10:41.073 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620877]: [success] (in 12487 ms)
+2024-10-28 22:10:43.312 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:210] in chat [private:933457114]
+2024-10-28 22:10:43.657 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620879]: [success] (in 345 ms)
+2024-10-28 22:10:46.450 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:212] in chat [private:933457114]
+2024-10-28 22:10:46.832 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620880]: [success] (in 382 ms)
+2024-10-28 22:10:50.793 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:214] in chat [private:933457114]
+2024-10-28 22:10:50.987 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620881]: [success] (in 193 ms)
+2024-10-28 22:11:23.872 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:216] in chat [private:933457114]
+2024-10-28 22:11:24.015 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620882]: [success] (in 143 ms)
+2024-10-28 22:11:27.703 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 22:11:27.703 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 22:11:27.704 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

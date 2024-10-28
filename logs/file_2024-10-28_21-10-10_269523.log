@@ -1,0 +1,64 @@
+2024-10-28 21:10:14.072 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 21:10:14.252 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:99] in chat [private:6948741611]
+2024-10-28 21:10:14.791 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620817]: [success] (in 539 ms)
+2024-10-28 21:10:21.522 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501859731395201] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: city_34 originally posted by user [ID:7774045102]
+2024-10-28 21:10:21.722 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501859731395201] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: city_34 originally posted by user [ID:7774045102]
+2024-10-28 21:10:21.722 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620818]: [success] (in 200 ms)
+2024-10-28 21:10:24.916 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501860499730462] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: area_118 originally posted by user [ID:7774045102]
+2024-10-28 21:10:25.151 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501860499730462] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: area_118 originally posted by user [ID:7774045102]
+2024-10-28 21:10:25.152 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620819]: [success] (in 236 ms)
+2024-10-28 21:14:52.707 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501860547303120] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: good_9_118 originally posted by user [ID:7774045102]
+2024-10-28 21:14:52.883 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501860547303120] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: good_9_118 originally posted by user [ID:7774045102]
+2024-10-28 21:14:52.884 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620820]: [success] (in 177 ms)
+2024-10-28 21:15:01.780 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_callback_query:101 - Received callback query [ID:2174501861266775807] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: position_2376 originally posted by user [ID:7774045102]
+2024-10-28 21:15:01.784 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_callback_query:121 - Unhandled callback query [ID:2174501861266775807] from user [ID:6948741611] for message [ID:100] in chat [private:6948741611] with data: position_2376 originally posted by user [ID:7774045102]
+2024-10-28 21:15:01.784 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_error:150 - Process update [ID:728620821]: [failed] (in 4 ms)
+2024-10-28 21:15:01.784 | ERROR    | asyncio.base_events:default_exception_handler:1785 - Task exception was never retrieved
+future: <Task finished name='Task-406' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=IndexError('Replacement index 1 out of range for positional args tuple')>
+Traceback (most recent call last):
+
+> File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                     │         │     │                   │    │               │        └ True
+                     │         │     │                   │    │               └ [<Update {"update_id": 728620821, "callback_query": {"id": "2174501861266775807", "from": {"id": 6948741611, "is_bot": false,...
+                     │         │     │                   │    └ <function Dispatcher.process_updates at 0x00000244035B62A0>
+                     │         │     │                   └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000002440388C510>
+                     │         │     └ <method 'from_iterable' of 'itertools.chain' objects>
+                     │         └ <class 'itertools.chain'>
+                     └ <module 'itertools' (built-in)>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+                 │       │       └ [<coroutine object Handler.notify at 0x00000244039DFEC0>]
+                 │       └ <function gather at 0x0000024401C967A0>
+                 └ <module 'asyncio' from 'C:\\Users\\newsp\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {}
+                     │           │        └ (<Update {"update_id": 728620821, "callback_query": {"id": "2174501861266775807", "from": {"id": 6948741611, "is_bot": false,...
+                     │           └ <bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000002440388C510>>
+                     └ Handler.HandlerObj(handler=<bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x0...
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+                 │    │                       │      │      └ <aiogram.types.fields.Field object at 0x0000024403458110>
+                 │    │                       │      └ <Update {"update_id": 728620821, "callback_query": {"id": "2174501861266775807", "from": {"id": 6948741611, "is_bot": false, ...
+                 │    │                       └ <function Handler.notify at 0x00000244034E4C20>
+                 │    └ <aiogram.dispatcher.handler.Handler object at 0x0000024403A62250>
+                 └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x000002440388C510>
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\venv\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {'state': <aiogram.dispatcher.storage.FSMContext object at 0x0000024405091050>}
+                     │           │        └ (<CallbackQuery {"id": "2174501861266775807", "from": {"id": 6948741611, "is_bot": false, "first_name": "venv∆", "username": ...
+                     │           └ <function promo_message at 0x000002440397CB80>
+                     └ Handler.HandlerObj(handler=<function promo_message at 0x000002440397CB80>, spec=FullArgSpec(args=['query', 'state'], varargs=...
+
+  File "C:\Users\newsp\OneDrive\Рабочий стол\shopbot\handlers\common.py", line 277, in promo_message
+    text = BotText.promotext.format(pos_text)
+           │       │         │      └ '🌐 Город: Белгород\n📂 Район: Гипер Лента\n📦 Товар: MDMA\n🔍 Позиция: 1г | Магнит | 2800 руб'
+           │       │         └ <method 'format' of 'str' objects>
+           │       └ '\n🌐 Город: {0}\n📂 Район: {1}\n📦 Товар: {2}\n🔍 Позиция: {3} | {4} | {5} руб\n'
+           └ <class 'handlers.text.BotText'>
+
+IndexError: Replacement index 1 out of range for positional args tuple
+2024-10-28 21:17:10.810 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 21:17:10.810 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 21:17:10.810 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

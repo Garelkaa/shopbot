@@ -1,0 +1,6 @@
+2024-10-28 20:56:32.974 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 20:56:37.995 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:90] in chat [private:6948741611]
+2024-10-28 20:56:38.594 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620814]: [success] (in 599 ms)
+2024-10-28 20:58:30.345 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 20:58:30.345 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 20:58:30.346 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

@@ -1,0 +1,112 @@
+2024-10-10 13:11:26.135 | INFO     | aiogram.dispatcher.dispatcher:start_polling:359 - Start polling.
+2024-10-10 13:11:38.070 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:26] in chat [private:5213841899]
+2024-10-10 13:11:38.516 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620759]: [success] (in 446 ms)
+2024-10-10 13:11:40.072 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:28] in chat [private:5213841899]
+2024-10-10 13:11:40.237 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_error:150 - Process update [ID:728620760]: [failed] (in 166 ms)
+2024-10-10 13:11:43.711 | ERROR    | asyncio.base_events:default_exception_handler:1771 - Task exception was never retrieved
+future: <Task finished name='Task-379' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:410> exception=ChatNotFound('Chat not found')>
+Traceback (most recent call last):
+
+> File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 418, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                     │         │     │                   │    │               │        └ True
+                     │         │     │                   │    │               └ [<Update {"update_id":728620760,"message":{"message_id":28,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","usern...
+                     │         │     │                   │    └ <function Dispatcher.process_updates at 0x00000228BF9544A0>
+                     │         │     │                   └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x00000228BFD1DE90>
+                     │         │     └ <method 'from_iterable' of 'itertools.chain' objects>
+                     │         └ <class 'itertools.chain'>
+                     └ <module 'itertools' (built-in)>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 236, in process_updates
+    return await asyncio.gather(*tasks)
+                 │       │       └ [<coroutine object Handler.notify at 0x00000228BFEEB4C0>]
+                 │       └ <function gather at 0x00000228BDF23240>
+                 └ <module 'asyncio' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {}
+                     │           │        └ (<Update {"update_id":728620760,"message":{"message_id":28,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","usern...
+                     │           └ <bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x00000228BFD1DE90>>
+                     └ Handler.HandlerObj(handler=<bound method Dispatcher.process_update of <aiogram.dispatcher.dispatcher.Dispatcher object at 0x0...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 257, in process_update
+    return await self.message_handlers.notify(update.message)
+                 │    │                │      │      └ <aiogram.types.fields.Field object at 0x00000228BF7D9490>
+                 │    │                │      └ <Update {"update_id":728620760,"message":{"message_id":28,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","userna...
+                 │    │                └ <function Handler.notify at 0x00000228BF862AC0>
+                 │    └ <aiogram.dispatcher.handler.Handler object at 0x00000228BFD1DF50>
+                 └ <aiogram.dispatcher.dispatcher.Dispatcher object at 0x00000228BFD1DE90>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+                     │           │        │       └ {'state': <aiogram.dispatcher.storage.FSMContext object at 0x00000228BFD1ED90>}
+                     │           │        └ (<Message {"message_id":28,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","username":"neboltavau","language_code...
+                     │           └ <function send_text at 0x00000228BFC64CC0>
+                     └ Handler.HandlerObj(handler=<function send_text at 0x00000228BFC64CC0>, spec=FullArgSpec(args=['message', 'state'], varargs=No...
+
+  File "f:\shopbot\handlers\common.py", line 93, in send_text
+    await message.forward(config.links.forward_channel_id)
+          │       │       │      │     └ -1001687848928
+          │       │       │      └ Links(forward_channel_id=-1001687848928, zalets_channel_id=-1001730947390, reviews_channel_url='https://t.me/+U9ls4-OkejowMWV...
+          │       │       └ Config(tg=Telegram(token='7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI', admin_id=5213841899), links=Links(forward_channel_...
+          │       └ <function Message.forward at 0x00000228BF791A80>
+          └ <Message {"message_id":28,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","username":"neboltavau","language_code"...
+
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\types\message.py", line 2876, in forward
+    return await self.bot.forward_message(
+                 │    └ <property object at 0x00000228BF5CF010>
+                 └ <Message {"message_id":28,"from":{"id":5213841899,"is_bot":false,"first_name":"Антон","username":"neboltavau","language_code"...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 394, in forward_message
+    result = await self.request(api.Methods.FORWARD_MESSAGE, payload)
+                   │    │       │   │       │                └ {'chat_id': -1001687848928, 'from_chat_id': 5213841899, 'message_id': 28}
+                   │    │       │   │       └ <aiogram.utils.helper.Item object at 0x00000228BF7DB8D0>
+                   │    │       │   └ <class 'aiogram.bot.api.Methods'>
+                   │    │       └ <module 'aiogram.bot.api' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\aiogram\\bot...
+                   │    └ <function BaseBot.request at 0x00000228BF7FF740>
+                   └ <aiogram.bot.bot.Bot object at 0x00000228BFE25610>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+                 │   │                  │    │              │    │       │             │       │     └ None
+                 │   │                  │    │              │    │       │             │       └ {'chat_id': -1001687848928, 'from_chat_id': 5213841899, 'message_id': 28}
+                 │   │                  │    │              │    │       │             └ 'forwardMessage'
+                 │   │                  │    │              │    │       └ <aiogram.bot.bot.Bot object at 0x00000228BFE25610>
+                 │   │                  │    │              │    └ TelegramAPIServer(base='https://api.telegram.org/bot{token}/{method}', file='https://api.telegram.org/file/bot{token}/{path}')
+                 │   │                  │    │              └ <aiogram.bot.bot.Bot object at 0x00000228BFE25610>
+                 │   │                  │    └ <function BaseBot.get_session at 0x00000228BF7FEF20>
+                 │   │                  └ <aiogram.bot.bot.Bot object at 0x00000228BFE25610>
+                 │   └ <function make_request at 0x00000228BF7BE480>
+                 └ <module 'aiogram.bot.api' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\aiogram\\bot...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           │            │       │        │             │        │             │        └ <function ClientResponse.text at 0x00000228BE8DAAC0>
+           │            │       │        │             │        │             └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/forwardMessage) [400 Bad Request]>...
+           │            │       │        │             │        └ 400
+           │            │       │        │             └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/forwardMessage) [400 Bad Request]>...
+           │            │       │        └ <property object at 0x00000228BE828B30>
+           │            │       └ <ClientResponse(https://api.telegram.org/bot7774045102:AAGxE103tpOlQKWOW3IVPbopmk6yCGzOJMI/forwardMessage) [400 Bad Request]>...
+           │            └ 'forwardMessage'
+           └ <function check_result at 0x00000228BF7BE5C0>
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+    │          │          │      └ 'Bad Request: chat not found'
+    │          │          └ <classmethod(<function _MatchErrorMixin.detect at 0x00000228BF5AF880>)>
+    │          └ <class 'aiogram.utils.exceptions.BadRequest'>
+    └ <module 'aiogram.utils.exceptions' from 'C:\\Users\\net\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\aio...
+  File "C:\Users\net\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+          │   │   │       └ 'bad request: chat not found'
+          │   │   └ None
+          │   └ <class 'aiogram.utils.exceptions.BadRequest'>
+          └ <class 'aiogram.utils.exceptions.ChatNotFound'>
+
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2024-10-10 13:11:43.722 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:29] in chat [private:5213841899]
+2024-10-10 13:11:44.006 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620761]: [success] (in 282 ms)
+2024-10-10 13:11:45.865 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:31] in chat [private:5213841899]
+2024-10-10 13:11:46.103 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620762]: [success] (in 238 ms)
+2024-10-10 13:11:46.982 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:33] in chat [private:5213841899]
+2024-10-10 13:11:47.226 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620763]: [success] (in 244 ms)
+2024-10-10 13:11:48.035 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:35] in chat [private:5213841899]
+2024-10-10 13:11:48.477 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620764]: [success] (in 442 ms)
+2024-10-10 13:11:49.458 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:38] in chat [private:5213841899]
+2024-10-10 13:11:49.754 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620765]: [success] (in 296 ms)
+2024-10-10 13:12:03.867 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-10 13:12:03.868 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:436 - Stop polling...
+2024-10-10 13:12:03.869 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

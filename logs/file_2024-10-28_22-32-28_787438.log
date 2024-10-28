@@ -1,0 +1,14 @@
+2024-10-28 22:32:29.888 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 22:32:40.575 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:343] in chat [private:6948741611]
+2024-10-28 22:32:40.892 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620993]: [success] (in 317 ms)
+2024-10-28 22:32:45.578 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:345] in chat [private:6948741611]
+2024-10-28 22:32:45.643 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620994]: [success] (in 65 ms)
+2024-10-28 22:33:17.737 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:347] in chat [private:6948741611]
+2024-10-28 22:33:17.897 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620995]: [success] (in 160 ms)
+2024-10-28 22:34:31.570 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:122559] in chat [supergroup:-1001730947390]
+2024-10-28 22:34:31.571 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620996]: [success] (in 1 ms)
+2024-10-28 22:35:05.198 | INFO     | aiogram.contrib.middlewares.logging:on_pre_process_message:36 - Received message [ID:349] in chat [private:933457114]
+2024-10-28 22:35:05.600 | INFO     | aiogram.contrib.middlewares.logging:on_post_process_update:33 - Process update [ID:728620997]: [success] (in 401 ms)
+2024-10-28 22:39:09.135 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 22:39:09.135 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 22:39:09.135 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

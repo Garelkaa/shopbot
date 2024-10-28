@@ -1,0 +1,4 @@
+2024-10-28 20:04:22.951 | INFO     | aiogram.dispatcher.dispatcher:start_polling:358 - Start polling.
+2024-10-28 20:06:01.060 | INFO     | tortoise:close_connections:552 - Tortoise-ORM shutdown
+2024-10-28 20:06:01.061 | INFO     | aiogram.dispatcher.dispatcher:stop_polling:433 - Stop polling...
+2024-10-28 20:06:01.061 | WARNING  | aiogram.utils.executor:start_polling:329 - Goodbye!

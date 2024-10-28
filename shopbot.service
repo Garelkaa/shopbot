@@ -1,0 +1,16 @@
+[Unit]
+Description=Shop Main Bot
+After=syslog.target
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=2s
+Type=simple
+User=user
+Group=user
+WorkingDirectory=/home/user/shopbot
+ExecStart=/home/user/shopbot/main.py
+
+[Install]
+WantedBy=multi-user.target
